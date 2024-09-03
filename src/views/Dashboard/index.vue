@@ -1,6 +1,6 @@
 <template>
   <div class="app-content">
-    <p v-for="(item, index) in 200" :key="index" text="#212121 20px">{{ item }} 首页</p>
+    <p v-for="(item, index) in 14" :key="index" text="#212121 20px">{{ item }} 首页</p>
   </div>
 </template>
 
