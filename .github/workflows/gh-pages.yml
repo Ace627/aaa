@@ -53,8 +53,9 @@ jobs:
       # Step 6: 部署到 GitHub Pages
       # 使用 peaceiris/actions-gh-pages@v4 部署构建文件到 GitHub Pages
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+        # uses: peaceiris/actions-gh-pages@v4
+        uses: JamesIves/github-pages-deploy-action@v4.3.0
         with:
-          github_token: ${{ secrets.DEPLOY_KEY }} # 使用 GitHub 提供的密钥进行身份验证
+          github_token: ${{ secrets.GITHUB_TOKEN }} # 使用 GitHub 提供的密钥进行身份验证
           publish_dir: ./dist # 指定构建输出目录，默认为 Vite 项目的 dist 目录
           force_orphan: true # 使用孤立分支，避免与历史记录冲突
