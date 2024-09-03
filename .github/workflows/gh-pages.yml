@@ -21,7 +21,7 @@ jobs:
     # 设置全局环境变量，强制所有 JavaScript Actions 使用 Node.js 20
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE20: true
-      GITHUB_TOKEN: ${{ secrets.TOKEN }}
+      # GITHUB_TOKEN: ${{ secrets.TOKEN }}
 
     steps:
       # Step 1: 检出仓库代码
@@ -56,6 +56,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }} # 使用 GitHub 提供的密钥进行身份验证
+          github_token: ${{ secrets.TOKEN }} # 使用 GitHub 提供的密钥进行身份验证
           publish_dir: ./dist # 指定构建输出目录，默认为 Vite 项目的 dist 目录
           force_orphan: true # 使用孤立分支，避免与历史记录冲突
