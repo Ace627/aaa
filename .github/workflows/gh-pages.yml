@@ -10,8 +10,6 @@ on:
 # 设置 GITHUB _ TOKEN 的权限以允许部署到 GitHub 页面
 permissions:
   contents: read # 仅允许工作流写入 `main` 分支内容。最小化权限以确保安全。
-  pages: write
-  id-token: write
 
 jobs:
   deploy:
