@@ -13,7 +13,7 @@ dist-ssr
 *.local
 
 # 会自动生成的文件
-types/auto-generate/*
+# types/auto-generate/*
 
 # Editor directories and files
 .idea
