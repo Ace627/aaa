@@ -13,8 +13,6 @@ permissions:
   pages: write
   id-token: write
 
-root: /aaa/
-
 jobs:
   deploy:
     # 定义工作运行的环境，这里使用的是最新的 Ubuntu 操作系统
