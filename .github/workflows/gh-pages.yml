@@ -22,14 +22,14 @@ jobs:
 
     steps:
       # Step 1: 检出仓库代码
-      # 使用 actions/checkout@v3 检出代码库的内容到工作环境中
+      # 使用 actions/checkout@v4 检出代码库的内容到工作环境中
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       # Step 2: 设置 Node.js 环境
-      # 使用 actions/setup-node@v3 安装并配置指定版本的 Node.js 环境
+      # 使用 actions/setup-node@v4 安装并配置指定版本的 Node.js 环境
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '20' # 使用的 Node.js 版本
 
