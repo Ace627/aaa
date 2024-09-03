@@ -1,0 +1,1 @@
+import{d as n,h as e,L as o,M as r,o as t,k as c,t as p}from"./vendor-CK32Cy7h.js";import{_}from"./index-CuDWJkVj.js";const d={class:"app-content"},i=n({name:"Dashboard",__name:"index",setup(m){return(f,l)=>(t(),e("div",d,[(t(),e(o,null,r(21,(a,s)=>c("p",{key:s,text:"#212121 20px"},p(a)+" 首页",1)),64))]))}}),h=_(i,[["__scopeId","data-v-f88def2a"]]);export{h as default};

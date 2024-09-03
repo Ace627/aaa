@@ -1,0 +1,1 @@
+import{d as r,h as s,A as n,m as c,o as p}from"./vendor-CK32Cy7h.js";const i=r({name:"Redirect",__name:"index",setup(u){const e=n(),t=c(),{params:o,query:a}=e;return t.replace({path:`/${o.path}`,query:a}),(m,_)=>(p(),s("div"))}});export{i as default};
