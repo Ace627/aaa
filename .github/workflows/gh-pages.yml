@@ -13,11 +13,13 @@ permissions:
 
 jobs:
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     # 定义工作运行的环境，这里使用的是最新的 Ubuntu 操作系统
     runs-on: ubuntu-latest
+
+    # 设置全局环境变量，强制所有 JavaScript Actions 使用 Node.js 20
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE20: true
+
     steps:
       # Step 1: 检出仓库代码
       # 使用 actions/checkout@v3 检出代码库的内容到工作环境中
@@ -29,7 +31,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18' # 使用的 Node.js 版本
+          node-version: '20' # 使用的 Node.js 版本
 
       # Step 3: 安装 pnpm
       # 安装 pnpm，这是一个快速、节省磁盘空间的包管理工具
